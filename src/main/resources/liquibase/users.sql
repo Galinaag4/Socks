@@ -1,5 +1,5 @@
 -- liquibase formatted sql
--- changeset g
+
 
 CREATE TABLE IF NOT EXISTS sock
 (

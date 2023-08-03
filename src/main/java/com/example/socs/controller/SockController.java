@@ -12,10 +12,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequiredArgsConstructor
 @RequestMapping("api/socks")
 public class SockController {
     private SockService sockService;
+
+    public SockController(SockService sockService) {
+        this.sockService = sockService;
+    }
 
     @Operation(
             summary = "Получить общее количество носков на складе",
